@@ -1,9 +1,26 @@
-<div class="header">
-	<ul class="nav nav-pills pull-right">
-		<li class="{{ page.cv }}"><a href="/cv" title="CV">CV</a></li>
-		<!-- <li class="{{ page.projects }}"><a href="/projects" title="Projects">Projects</a></li> -->
-		<!-- <li class="{{ page.notes }}"><a href="/notes" title="Notes">Notes</a></li> -->
-		<li class="{{ page.contact }}"><a href="/contact" title="Contact">Contact</a></li>
-	</ul>
-	<h3 class="text-muted"><a href="/">Jonathan McGlone</a></h3>
-</div> <!-- /header -->
+{% if page.title == "Home"
+   or page.title == "Blog"
+   or page.title == "Projects"
+   or page.title == "Tags"
+%}{% assign showHeader = true %}{% endif %}
+
+{% if showHeader == true %}
+    <header class="header-home {% if site.animation %}animated{% endif %}">
+        {% if site.about %}
+            <a class="link" href="{{ site.url }}/about">
+                <img class="selfie" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
+            </a>
+        {% else %}
+            <span class="link">
+                <img class="selfie" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
+            </span>
+        {% endif %}
+
+        <h1 class="title">{{ site.name }}</h1>
+        <h2 class="description">{{ site.bio }}</h2>
+
+        {% include social-links.html %}
+    </header>
+{% endif %}
+
+{% include nav.html %}

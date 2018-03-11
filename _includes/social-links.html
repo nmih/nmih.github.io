@@ -17,12 +17,6 @@
         </a>
     {% endif %}
 
-    {% if site.googlescholar %}
-        <a class="link" data-title="Google Scholar" href="https://scholar.google.com/citations?user=1Iy3yaQAAAAJ&hl=en" target="_blank">
-            <svg class="icon icon-google"><use xlink:href="#icon-google"></use></svg>
-        </a>
-    {% endif %}
-
     {% if site.instagram %}
         <a class="link" data-title="instagram.com/{{ site.instagram }}" href="http://instagram.com/{{ site.instagram }}" target="_blank">
             <svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
@@ -53,15 +47,15 @@
         </a>
     {% endif %}
 
-    {% if site.lastfm %}
-        <a class="link" data-title="last.fm" href="https://last.fm/user/{{ site.lastfm }}" target="_blank">
-            <svg class="icon icon-lastfm"><use xlink:href="#icon-lastfm"></use></svg>   
-        </a>
-    {% endif %}
-
     {% if site.github %}
         <a class="link" data-title="GitHub" href="https://github.com/{{ site.github }}" target="_blank">
             <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
+        </a>
+    {% endif %}
+
+    {% if site.googlescholar %}
+        <a class="link" data-title="Google Scholar" href="https://scholar.google.com/citations?user=1Iy3yaQAAAAJ&hl=en" target="_blank">
+            <svg class="icon icon-google"><use xlink:href="#icon-google"></use></svg>
         </a>
     {% endif %}
     
@@ -98,6 +92,12 @@
     {% if site.lanyrd %}
         <a class="link" data-title="lanyrd.com/{{ site.lanyrd }}" href="https://lanyrd.com/{{ site.lanyrd }}" target="_blank">
             <svg class="icon icon-microphone"><use xlink:href="#icon-microphone"></use></svg>
+        </a>
+    {% endif %}
+
+    {% if site.lastfm %}
+        <a class="link" data-title="last.fm" href="https://last.fm/user/{{ site.lastfm }}" target="_blank">
+            <svg class="icon icon-lastfm"><use xlink:href="#icon-lastfm"></use></svg>   
         </a>
     {% endif %}
 

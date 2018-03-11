@@ -1,6 +1,7 @@
 # main text of home
 name: Nathan Mih
-bio: Bioinformatics PhD student at UC San Diego in the <a href="http://sbrg.ucsd.edu/">Systems Biology Research Group</a>
+bio: >
+  Bioinformatics PhD student at UC San Diego in the <a href="http://sbrg.ucsd.edu/">Systems Biology Research Group</a>
 
 # twitter summary info
 description: Personal webpage

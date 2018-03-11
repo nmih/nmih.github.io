@@ -14,7 +14,7 @@ picture: assets/images/profile.jpg
 # and specify source (external or local).
 resume: true
 resume-external: false
-resume-url: assets/images/profile.jpg
+resume-url: assets/180310-MihNathan_Resume.pdf
 
 url: https://nmih.github.io
 
@@ -68,11 +68,11 @@ width: normal
 # paginate_path: "blog/:num/"
 
 # if you don't need projects, comment the *projects* configs below
-projects: true
+# projects: true
 
 # if you don't need "about" or "blog", comment them out below
-about: true
-blog: false
+# about: true
+# blog: true
 
 # do you want to show the "read time" of the posts?
 read-time: false

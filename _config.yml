@@ -14,7 +14,7 @@ picture: assets/images/profile_protein.png
 # and specify source (external or local).
 resume: true
 resume-external: false
-resume-url: assets/180310-MihNathan_Resume.pdf
+resume-url: assets/MihNathan_Resume.pdf
 
 url: https://nmih.github.io
 

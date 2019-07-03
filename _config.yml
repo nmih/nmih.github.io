@@ -1,6 +1,6 @@
 # main text of home
 name: Nathan Mih
-bio: Bioinformatics PhD student at UC San Diego
+bio: Software Engineer at Lygos, Inc.
 
 # twitter summary info
 description: Personal webpage
@@ -50,12 +50,12 @@ lastfm: deckardk
 # medium: medium
 # vimeo: myvimeo
 # lanyrd: mylanyrd
-email: nathan.mih+nmih@gmail.com
+email: nathan.mih+githubio@gmail.com
 
 authors:
     nathanmih:
         name: Nathan Mih
-        bio: Bioinformatics PhD student at UC San Diego
+        bio: Software Engineer at Lygos, Inc.
         external-image: false
         picture: assets/images/profile_protein.png
 

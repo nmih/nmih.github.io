@@ -2,38 +2,60 @@
 
 <div class="social-links">
     {% if site.linkedin %}
-        <a class="link" data-title="linkedin.com/in/{{ site.linkedin }}" href="https://www.linkedin.com/in/{{ site.linkedin }}" target="_blank"  rel="noopener">
-            <i class="fa-brands fa-linkedin"></i>
-        </a>
-    {% endif %}
-    
-    {% if site.github %}
-        <a class="link" data-title="github.com/{{ site.github }}" href="https://github.com/{{ site.github }}" target="_blank"  rel="noopener">
-            <i class="fa-brands fa-github"></i>
-        </a>
-    {% endif %}
-    
-    {% if site.googlescholar %}
-    <a class="link" data-title="Google Scholar" href="https://scholar.google.com/citations?user=LvPanQ4AAAAJ&hl=en" target="_blank">
-        <svg class="icon icon-google"><use xlink:href="#icon-google"></use></svg>
+    <a
+        class="link"
+        data-title="linkedin.com/in/{{ site.linkedin }}"
+        href="https://www.linkedin.com/in/{{ site.linkedin }}"
+        target="_blank"
+        rel="noopener"
+    >
+        <i class="fa-brands fa-linkedin"></i>
     </a>
-    {% endif %}
-    
-    {% if site.spotify %}
-        <a class="link" data-title="open.spotify.com/user/{{ site.spotify }}" href="https://open.spotify.com/user/{{ site.spotify }}" target="_blank">
-            <svg class="icon icon-spotify"><use xlink:href="#icon-spotify"></use></svg>
-        </a>
-    {% endif %}
-
-    {% if site.lastfm %}
-        <a class="link" data-title="last.fm" href="https://last.fm/user/{{ site.lastfm }}" target="_blank">
-            <svg class="icon icon-lastfm"><use xlink:href="#icon-lastfm"></use></svg>   
-        </a>
-    {% endif %}
-
-    {% if site.email %}
-        <a class="link" data-title="{{ site.email }}" href="mailto:{{ site.email }}"  rel="noopener">
-            <i class="fa-regular fa-envelope"></i>
-        </a>
+    {% endif %} {% if site.github %}
+    <a
+        class="link"
+        data-title="github.com/{{ site.github }}"
+        href="https://github.com/{{ site.github }}"
+        target="_blank"
+        rel="noopener"
+    >
+        <i class="fa-brands fa-github"></i>
+    </a>
+    {% endif %} {% if site.googlescholar %}
+    <a
+        class="link"
+        data-title="Google Scholar"
+        href="https://scholar.google.com/citations?user=LvPanQ4AAAAJ&hl=en"
+        target="_blank"
+    >
+        <i class="fa-brands fa-google"></i>
+    </a>
+    {% endif %} {% if site.spotify %}
+    <a
+        class="link"
+        data-title="open.spotify.com/user/{{ site.spotify }}"
+        href="https://open.spotify.com/user/{{ site.spotify }}"
+        target="_blank"
+    >
+        <i class="fa-brands fa-spotify"></i>
+    </a>
+    {% endif %} {% if site.lastfm %}
+    <a
+        class="link"
+        data-title="last.fm"
+        href="https://last.fm/user/{{ site.lastfm }}"
+        target="_blank"
+    >
+        <i class="fa-brands fa-lastfm"></i>
+    </a>
+    {% endif %} {% if site.email %}
+    <a
+        class="link"
+        data-title="{{ site.email }}"
+        href="mailto:{{ site.email }}"
+        rel="noopener"
+    >
+        <i class="fa-regular fa-envelope"></i>
+    </a>
     {% endif %}
 </div>

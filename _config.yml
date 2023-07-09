@@ -1,6 +1,6 @@
 # main text of home
 name: Nathan Mih
-bio: Software Engineer at Lygos, Inc.
+bio: Scientific Software Engineer
 
 # twitter summary info
 description: Personal webpage
@@ -9,6 +9,10 @@ description: Personal webpage
 # better with square images
 external-image: false
 picture: assets/images/profile_protein.png
+
+# your site color theme, true for dark theme,
+# false to light theme, auto to switch with system.
+dark-theme: auto
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
@@ -23,39 +27,22 @@ permalink: /:title/
 # To enable google analytics, supply your token below
 # analytics-google: 'UA-MYANALYTICS'
 
-# To enable piwik tracking, supply your url & site ID below
-# analytics-piwik-url: 'piwik.my-host.com'
-# analytics-piwik-id: 1
-
 # if you don't want comments in your posts, leave categories empty
 disqus:
-  shortname: mydisqus # enter this from your disqus account
-  categories: [] # only show disqus for posts that have these categories
+    shortname: mydisqus # enter this from your disqus account
+    categories: [] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-# facebook: myfacebook
-# twitter: mytwitter
-# google: mygoogle
-googlescholar: nathanmih
-# instagram: myinstagram
-# pinterest: mypinterest
-linkedin: nathan-mih
-# youtube: myyoutube
-# spotify: myspotify
 github: nmih
+linkedin: nathan-mih
+googlescholar: nathanmih
 lastfm: deckardk
-# stackoverflow: 7044681/mystackoverflow
-# quora: userquora
-# reddit: username
-# medium: medium
-# vimeo: myvimeo
-# lanyrd: mylanyrd
 email: nathan.mih+1112@gmail.com
 
 authors:
     nathanmih:
         name: Nathan Mih
-        bio: Software Engineer at Lygos, Inc.
+        bio: Scientific Software Engineer
         external-image: false
         picture: assets/images/profile_protein.png
 
@@ -64,9 +51,13 @@ authors:
 # normal = 560px / large = 810px
 width: normal
 
-# if you don't need pagination, comment the *paginate* configs below
-# paginate: 5
-# paginate_path: "blog/:num/"
+# if you do/don't need pagination, toggle 'enabled' between true/false below
+pagination:
+    enabled: false
+    sort_reverse: true # display recent posts first
+    title: ":title" # Changing this will mess up the header display logic
+    per_page: 5
+    permalink: "/:num/" # pagination link that will be appended
 
 # if you don't need projects, comment the *projects* configs below
 # projects: true
@@ -93,12 +84,27 @@ show-author: true
 # do you want some animations?
 animation: true
 
-plugins:
-  - jekyll-seo-tag
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll-admin
+# add default values to specific pages or layouts
+defaults:
+    - scope:
+          path: "" # an empty string here means all files in the project
+          layout: "post"
+      values:
+          # setting all post to not hidden by default,
+          # can be overridden in the front matter for a specific post
+          hidden: false
 
-jekyll-mentions:
-    base_url: https://github.com
+plugins:
+    - jekyll-seo-tag
+    - jekyll-gist
+    - jekyll-feed
+    - jemoji
+    - jekyll-admin
+
+compress_html:
+    ignore:
+        envs:
+            - development
+            - stage
+
+exclude: ["README.md", "Gemfile", "Gemfile.lock", "FAQ.md", "vendor"]
